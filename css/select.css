@@ -1,0 +1,109 @@
+.lang-vidjet{
+  width: 80px;
+  height: 40px;
+}
+
+
+.select {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  font-size: 16px;
+  top: 10px;
+} 
+
+
+.new-select {
+  position: relative;
+  border: 1px solid #ced4da;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 30px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 50px;
+  background: url(../img/flag_en_big.jpeg) center / cover;
+  color: rgb(0, 0, 0);
+
+}
+
+.new-select__list {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  border: 1px solid #ced4da;
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  background: #fff;
+  user-select: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.new-select__list.on {
+  display: block;
+}
+
+.new-select__item span {
+  display: block;
+  padding: 10px 10px;
+  color: rgb(57, 51, 51);
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.new-select__item span:hover {
+  color: #b02752;
+  background-color: #ced4da;
+}
+
+.new-select::after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  opacity: 0.6;
+  color: black;
+  background: none;
+
+  -webkit-transition: all .27s ease-in-out;
+      -o-transition: all .27s ease-in-out;
+          transition: all .27s ease-in-out;
+
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+       -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.new-select.on::after {
+  color: black;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+       -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.new-select.on{
+  background: none;
+}
+
+#selected + .new-select{
+  top: -10px;
+  width: inherit;
+}
+.ru-back{
+  background: url(../img/Flag_of_Russia.svg.png);
+}
+
+@media (max-width: 525px){
+  
+  .select{
+    width: 50%;
+  }
+} 

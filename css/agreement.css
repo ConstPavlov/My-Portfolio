@@ -1,0 +1,35 @@
+:root{
+  --bg_color: #1f202c;
+}
+/*-----------------------Пользовательское  соглашение-----------start------------------*/
+.agreement-page {
+  background-color: var(--bg_color);
+  padding-top: 128px;
+  color: #ffffff;
+}
+.agreement__title {
+  font-size: 40px;
+  font-weight: 100;
+  margin-bottom: 128px;
+}
+.agreement__item {
+}
+.agreement__item-title {
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  padding: 32px 8px;
+}
+.agreement__list {
+  line-height: 1.4;
+  display: grid;
+  row-gap: 30px;
+}
+.agreement__rule {
+  width: 100%;
+  max-width: 512px;
+}
+.agreement__rule span{
+  padding: 0 30px;
+}
+/*-----------------------Пользовательское  соглашение-------end----------------------*/

@@ -1,0 +1,315 @@
+
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+
+}
+/* Header style start */
+.activities{
+    padding-top: 50px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+}
+
+
+
+.container-activities__logo{
+    margin: 0 auto;
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -10;
+    object-fit: contain;
+    animation-delay: 0.1s;
+    animation-duration: 2s;
+}
+.container-activities__logo img{
+    max-width: 256px;
+    max-height: 256px;
+
+}
+.container__activities__logo-img{
+    min-width: 50%;
+}
+
+.input__and__button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-left: 16px;
+}
+.input-search-activities{
+    font-family: 'Inter', sans-serif;
+    height: 40px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid transparent;
+    border-radius: 1.815rem;
+    color: black;
+    background-color: antiquewhite;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-right: 20px;
+}
+.input-search-activities:hover, .input-search-activities:active, .input-search-activities:focus {
+    background-color: rgb(157, 114, 58);
+}
+.input-search-activities::placeholder{
+    color: black;
+    font-size: 1.25rem;
+    text-align: center;
+    
+}
+.input-search-activities:active::placeholder, .input-search-activities:hover::placeholder{
+    color: dimgray;
+}
+.button-search-activities{
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background-color: antiquewhite; 
+}
+.button-search-activities:hover, .button-search-activities:active, .button-search-activities:focus{
+    cursor: pointer;
+    background-color: rgb(157, 114, 58);
+}
+.search-card-ico{
+    font-size: 32px;
+    color: var(--bg_color);
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+.search-card-ico:hover, .search-card-ico:active, .search-card-ico:focus{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgb(157, 114, 58);
+    border-radius: 50%;
+
+}
+/* Header style end */
+
+/* Main style start */
+
+.filters{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-column-gap: 10px;
+    margin-top: 48px;
+    margin-bottom: 64px;
+    padding: 0px 30px;
+    
+}
+.filters fieldset{
+    padding: 2px 8px 6px;
+}
+.filters legend{
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 300;
+}
+.filtering{
+    background-color: antiquewhite;
+    font-size: 24px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    border-radius: 12px;
+}
+option{
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0px 40px;   
+    display: inline-block;
+    white-space: nowrap;
+    min-height: 1.2em;
+}
+
+
+
+/* Content style start*/
+
+.content{
+    margin: 0 auto;
+    position: relative;
+}
+.content__decor-sfera{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: rgb(136 255 152 / 80%);
+    -webkit-filter: blur(167px);
+    -moz-filter: blur(167px);
+    filter: blur(167px);
+    z-index: -1;
+}
+
+.sfera__top{
+    left: 75%;
+    top: 5%;
+
+}
+.sfera__bottom{
+    bottom: 0;
+    right: 75%;
+}
+
+
+.content__title-div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.content__title{
+    color: #ffff;
+    font-weight: 700;
+    font-size: 2.875rem;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    transform: translate(0, 130%);
+    transition: all 1.2s ease 0.8s;
+    opacity: 0;
+}
+.content__title._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+
+.content__desc{
+    width: 100%;
+    max-width: 600px;
+    color: #ffff;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 60px;
+    transform: translate(-1200px, 100%);
+    transition: all 1.2s ease 0s;
+    opacity: 0;
+}
+.content__desc p{
+    color: #ffff;
+}
+.content__desc._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+._anim-show{
+    transform: translate(0px, 100%);
+    transition: all 1s ease 0s;
+    opacity: 0;
+}
+
+._anim-show._active,
+._active ._anim-show{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+
+
+.results{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.card{
+    display: inline-block;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0.25rem 3.75rem -0.345rem rgb(178 178 178 / 40%);
+
+}
+
+.img__card{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgb(37, 212, 145);
+}
+.card__content{
+    position: relative;
+    z-index: 1;
+}
+
+.card__title{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 25px;
+    color: #ffff;
+    text-align: center;
+    margin-bottom: 20px;
+    min-height: 50px;
+
+}
+.card__desc{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 10px;
+    color: rgb(191, 178, 178);
+    margin-bottom: 16px;
+    padding: 16px 8px;
+    text-align: center;
+    min-height: 76px;
+}
+.card__params{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffff;
+    margin-bottom: 15px;
+}
+.card label{
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    color: yellow;
+
+}
+.card__footer{
+    display: flex;
+    gap: 10px;
+}
+.activities-ico {
+    width: 50px;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+}
+.activities-ico-img{
+    width: 50px;
+    height: 50px;
+}
+.activities-ico:hover, .activities-ico:focus, .activities-ico:active{
+    opacity: 60%;
+    background-color: rgb(166, 25, 25);
+}
+
+/* Content style end */
+
+
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+.filters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    /* grid-column-gap: 20px; */
+    row-gap: 4px;
+    margin-top: 48px;
+    justify-content: center;
+    margin-bottom: 64px;
+    }
+}
+/*-----2 страница 3 экран----*/
