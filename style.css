@@ -471,7 +471,7 @@ h2{
 }
 .privilege-item {
   width: calc(50% - 10px);
-  padding: 4px;
+  padding: 5px;
   background: linear-gradient(67deg, #ff63f1, #3ce1f6);
   margin-right: 10px;
   margin-bottom: 26px;
@@ -2468,8 +2468,8 @@ margin-top: 600px;
 
   .privilege-item {
     width: calc(33.33% - 10px);
-    padding: 0px 10px;
-    min-height: 40px;
+/*     padding: 0px 10px;
+    min-height: 40px; */
   }
   .welcome__my {
     margin-top: 32px;
@@ -2738,9 +2738,9 @@ margin-top: 600px;
 
   .privilege-item {
     width: 100%;
-    padding: 0px 10px;
+/*     padding: 0px 10px;
     min-height: 40px;
-    margin: 20px 122px;
+    margin: 20px 122px; */
   } 
   .welcome__btn {
     font-size: 24px;
@@ -2931,9 +2931,7 @@ margin-top: 600px;
 
 
 @media (max-width: 525px){
-  .privilege-item {
-    margin: 20px 90px;
-  } 
+
   .welcome__my {
     width: 400px;
     height: 378px;
@@ -3004,9 +3002,9 @@ margin-top: 600px;
   }
 }
 @media (max-width: 450px){
-  .privilege-item {
+/*   .privilege-item {
     margin: 20px 60px;
-  }
+  } */
   .desc-cont {
     margin: 66px 0px 15px 0px;
     gap: 40px;
@@ -3094,9 +3092,9 @@ margin-top: 600px;
 }
 }
 @media (max-width: 379px) {
-  .privilege-item {
+/*   .privilege-item {
     margin: 20px 26px;
-  }
+  } */
   .welcome__my {
     width: 315px;
     height: 304px;
