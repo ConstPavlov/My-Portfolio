@@ -375,6 +375,9 @@ h2{
   z-index: 9;
   /* box-shadow: 0 10px 35px 9px rgb(255 2 2 / 49%); */
 }
+.button-side-bar span{
+  font-size: 50px;
+}
 .button-side-bar__name{
   position: absolute;
   font-size: 28px;
@@ -2900,9 +2903,7 @@ margin-top: 600px;
     left: 38%;
     transform: translate(-38%, -50%);
   }
-  .button-side-bar {
-    left: -6%;
-  }
+
 }
 
 @media (max-width: 545px){
@@ -3009,9 +3010,7 @@ margin-top: 600px;
     margin: 66px 0px 15px 0px;
     gap: 40px;
   }
-  .button-side-bar {
-    left: -10%;
-  }
+
 }
 
 /* Iphone 5 */
