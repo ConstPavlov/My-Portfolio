@@ -12,7 +12,7 @@
 
 ## About me
 
-My name is Konstantin! I am a web developer, I love writing web applications and learning new technologies. I am open to your suggestions, I will be happy to work on an interesting project.
+I am a web developer, I love writing web applications and learning new technologies. I am open to your suggestions, I will be happy to work on an interesting project.
 
 ---
 
